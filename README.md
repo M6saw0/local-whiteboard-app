@@ -49,21 +49,17 @@ npm --version
    git clone <repository-url>
    ```
 
-2. **Navigate to the frontend directory**
-   ```bash
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+4. **Open your browser**
    
    The application will be available at:
    ```
@@ -75,7 +71,6 @@ npm --version
 To create an optimized production build:
 
 ```bash
-cd frontend
 npm run build
 ```
 
@@ -209,7 +204,6 @@ All data is stored locally in your browser using IndexedDB:
 ### Running Development Server
 
 ```bash
-cd frontend
 npm run dev
 ```
 
@@ -218,14 +212,12 @@ The app will be available at `http://localhost:5173` with hot module replacement
 ### Building for Production
 
 ```bash
-cd frontend
 npm run build
 ```
 
 ### Linting
 
 ```bash
-cd frontend
 npm run lint
 ```
 
