@@ -1,0 +1,134 @@
+.properties-panel {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 16px;
+  overflow-y: auto;
+  min-height: 300px;
+  pointer-events: auto;
+  user-select: none;
+  position: relative;
+  z-index: 20;
+}
+
+.properties-panel h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.empty-message {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  padding: 16px;
+}
+
+.property-section {
+  margin-bottom: 20px;
+}
+
+.property-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.color-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.color-input-group input[type="color"] {
+  width: 50px;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.color-input-group input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  user-select: text;
+  pointer-events: auto;
+}
+
+.color-input-group input[type="text"]:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+input[type="range"]:active {
+  z-index: 30;
+  position: relative;
+}
+
+.size-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.size-input-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+.size-input-item label {
+  margin: 0;
+  min-width: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.size-input-item input[type="number"] {
+  flex: 1;
+  padding: 6px 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  user-select: text;
+  pointer-events: auto;
+}
+
+.size-input-item input[type="number"]:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.size-input-item span {
+  font-size: 12px;
+  color: #999;
+}
+
+.multi-select-info {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #e3f2fd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1976d2;
+  text-align: center;
+}
+

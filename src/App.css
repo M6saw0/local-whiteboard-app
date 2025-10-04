@@ -1,0 +1,99 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.canvas-container {
+  flex: 1;
+  position: relative;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 1px solid #e0e0e0;
+  z-index: 10;
+  position: relative;
+}
+
+.right-panel > * {
+  width: 100%;
+  border-left: none;
+}
+
+/* グローバルスタイル */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* スクロールバーのスタイル */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* React Flow エッジの選択時スタイル */
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:focus .react-flow__edge-path,
+.react-flow__edge:focus-visible .react-flow__edge-path {
+  stroke: #2196f3 !important;
+  stroke-width: 4 !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  animation: edge-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes edge-pulse {
+  0%, 100% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.7;
+  }
+}
+
+/* エッジのマーカー（矢印）の選択時スタイル */
+.react-flow__edge.selected marker path,
+.react-flow__edge:focus marker path,
+.react-flow__edge:focus-visible marker path {
+  fill: #2196f3 !important;
+}
